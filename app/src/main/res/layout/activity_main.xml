@@ -6,14 +6,14 @@
     <data>
         <variable
                 name="viewModel"
-                type="com.rodentia6.sampledatabinding.MyViewModel"/>
+                type="com.rodentia6.sampledatabinding.MainViewModel"/>
         <import type="android.view.View"/>
     </data>
 
     <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".MyActivity">
+            tools:context=".MainActivity">
 
         <ImageView
                 android:id="@+id/image"
@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="80dp"
-                android:text="Button"
+                android:text="@{viewModel.flag ? @string/kesu : @string/tukeru}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent" />

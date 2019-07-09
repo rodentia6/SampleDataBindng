@@ -4,7 +4,7 @@ import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
 
-class MyViewModel: ViewModel() {
+class MainViewModel: ViewModel() {
     private val _flag = MutableLiveData<Boolean>().apply {
         value = false
     }
